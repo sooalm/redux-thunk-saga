@@ -1,0 +1,74 @@
+.list-tasks{
+display: flex;
+flex-direction: column;
+/* justify-content: space-between; */
+/* align-items: center; */
+gap:1rem;
+
+&::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar visually */
+}
+height:500px;
+overflow: auto;
+}
+.list-tasks__title{
+
+}
+.list-tasks__task{ 
+  width:200px;
+  border:1px solid black;
+  border-radius: 25px;
+  background-color: yellowgreen;
+  color:cornsilk;
+
+  
+}
+.list-tasks__task:hover{
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap:1rem;
+  }
+.strikeTrough{
+ text-decoration: line-through;
+ background-color: gray;
+ opacity:0.5;
+ color:black;
+}
+
+.delete-button {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 32' enable-background='new 0 0 32 32' id='Stock_cut' version='1.1' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%23000000'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cdesc%3E%3C/desc%3E%3Cg%3E%3Cpolygon fill='none' points='25,11 7,11 9,31 23,31 ' stroke='currentColor' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'%3E%3C/polygon%3E%3Cline fill='none' stroke='currentColor' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2' x1='4' x2='28' y1='11' y2='11'%3E%3C/line%3E%3Cline fill='none' stroke='currentColor' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2' x1='13' x2='13' y1='31' y2='14'%3E%3C/line%3E%3Cline fill='none' stroke='currentColor' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2' x1='19' x2='19' y1='31' y2='14'%3E%3C/line%3E%3Cpolyline fill='none' points='13,11 13,7 19,7 19,11 ' stroke='currentColor' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover;
+  /* background-position: center; */
+  background-size: 22px 22px;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  border: none;
+
+  color: rgb(196, 81, 81);
+  cursor: pointer;
+
+  width: 27px;
+  height: 27px;
+}
+.delete-button:focus{
+  outline: none;
+}
+.delete-button:hover {
+  transform: scale(1.1);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 32 32' enable-background='new 0 0 32 32' id='Stock_cut' version='1.1' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' fill='%23000000'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cdesc%3E%3C/desc%3E%3Cg%3E%3Cpolygon fill='none' points='25,11 7,11 9,31 23,31 ' stroke='rgb(196, 81, 81)' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'%3E%3C/polygon%3E%3Cline fill='none' stroke='rgb(196, 81, 81)' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2' x1='4' x2='28' y1='11' y2='11'%3E%3C/line%3E%3Cline fill='none' stroke='rgb(196, 81, 81)' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2' x1='13' x2='13' y1='31' y2='14'%3E%3C/line%3E%3Cline fill='none' stroke='rgb(196, 81, 81)' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2' x1='19' x2='19' y1='31' y2='14'%3E%3C/line%3E%3Cpolyline fill='none' points='13,11 13,7 19,7 19,11 ' stroke='rgb(196, 81, 81)' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+}
