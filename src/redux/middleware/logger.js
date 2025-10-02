@@ -1,7 +1,7 @@
 export const logger = (store) => (next) => (action) => {
-console.log('Dispatching action:', action);
-console.log('Before:', store.getState());
-const result = next(action);
-console.log('After:', store.getState());
-return result;
-}
+  console.log("###LOGGER### Dispatching action:", action);
+  console.log("###LOGGER###  Before:", store.getState());
+  const result = next(action);
+  console.log("###LOGGER###  After:", store.getState());
+  return result;
+};
