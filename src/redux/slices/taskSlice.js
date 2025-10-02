@@ -7,6 +7,7 @@ const tasksSlice = createSlice({
     tasks: [],
     status: null,
     error: null,
+    value: 0,
   },
   reducers: {
     addTask(state, action) {
@@ -56,7 +57,13 @@ const tasksSlice = createSlice({
           console.warn(`Task with id ${payload.id} not found`);
         }
       })
-      .addCase(toggleTodos.rejected, errorRejected);
+      .addCase(toggleTodos.rejected, errorRejected)
+      .addCase("counter/increment", (state) => {
+        state.value += 1;
+      })
+      .addCase("counter/decrement", (state) => {
+        state.value -= 1;
+      });
   },
 });
 const errorRejected = (state, action) => {

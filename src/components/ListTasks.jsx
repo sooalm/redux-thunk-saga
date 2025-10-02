@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addTask } from "../redux/slices/taskSlice";
 import { deleteTodos, toggleTodos } from "../redux/createAsyncThunk";
 
+import Counter from "./CounterSaga";
 import "../styles/ListTasks.css";
 
 export const ListTasks = () => {
@@ -61,6 +62,7 @@ export const ListTasks = () => {
           <div>Нет задач</div>
         )}
       </div>
+      <Counter />
     </>
   );
 };
